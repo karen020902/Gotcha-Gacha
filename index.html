@@ -33,12 +33,12 @@
   <section class="hero"><span class="pill">估我唔到呢～.< </span><h2>Gotcha Gacha! <br>多謝你一直以來嘅照顧，<br>送俾大傻瓜嘅小小驚喜～ </h2><p>下面仲有「回顧已抽卡」區，掛住我就可以撳返之前日子嘅卡面望多兩眼。</p></section>
   <section class="card-shell"><div class="card-top"><div><p class="muted">今日專屬卡牌</p><h3>按《立即抽卡》<br> 馬上收取小公主俾你嘅愛！</h3></div><div class="status" id="statusPill">未抽卡</div></div>
     <div class="stage"><div class="draw-area" id="drawArea"><div class="card-wrap" id="card1Wrap"><div class="card-inner"><div class="card-face card-back"><div><h3> Gotcha Gacha</h3><p>準備翻卡中</p></div></div><div class="card-face card-front rarity-ssr" id="card1Front"><div class="frame"></div><div class="shine"></div><div class="content"><div class="head"><div><div class="day" id="day1">Day 1</div><h3 class="title" id="title1">卡 1</h3></div><div class="badge" id="rarity1">SSR</div></div><div class="photo" id="photo1"></div><div><p class="msg" id="msg1"></p><div class="sig"><span id="date1"></span><span>from 小公主</span></div></div></div></div></div></div><div class="card-wrap" id="card2Wrap"><div class="card-inner"><div class="card-face card-back"><div><h3>Gotcha Gacha</h3><p>準備翻卡中</p></div></div><div class="card-face card-front rarity-ssr" id="card2Front"><div class="frame"></div><div class="shine"></div><div class="content"><div class="head"><div><div class="day" id="day2">Day 1</div><h3 class="title" id="title2">卡 2</h3></div><div class="badge" id="rarity2">SSR</div></div><div class="photo" id="photo2"></div><div><p class="msg" id="msg2"></p><div class="sig"><span id="date2"></span><span>from 小公主</span></div></div></div></div></div></div></div></div>
-    <div class="controls"><button class="btn btn-primary" id="drawBtn">立即抽卡</button><button class="btn btn-secondary" id="resetBtn">重設抽卡紀錄</button></div><div class="note">提示：可按下方卡面回顧已抽卡日子；手機上會以卡片列表方式排列。</div></section>
+    <div class="controls"><button class="btn btn-primary" id="drawBtn">立即抽卡</button><button class="btn btn-secondary" id="resetBtn">重新抽卡</button></div><div class="note">提示：可按下方卡面回顧已抽卡日子；手機上會以卡片列表方式排列。</div></section>
   <section class="panel replay hidden" id="replaySection"><div class="replay-label"><h3 style="font-family:var(--fontD);margin:0;font-size:1.02rem">回顧已抽卡</h3><span class="muted" style="font-size:.78rem">點一下卡面就可重温</span></div><div class="replay-grid" id="replayGrid"></div></section>
 </div>
 <div class="modal" id="modal"><div class="modal-card"><button class="close" id="closeModal">✕</button><img id="modalImg" alt="卡面預覽"><div class="body"><h4 id="modalTitle"></h4><div id="modalMeta" class="muted" style="font-size:.78rem"></div><p id="modalMsg" class="msg"></p></div></div></div>
 <script>
-const tripStartDate='2026-06-27';
+const tripStartDate='2026-06-30';
 const cards=[
   {day:1,rarity:'UR',title:'第一日 · 抱抱補給 A',message:'雖然小公主今日唔喺你身邊，但你可以當呢張卡係小公主俾你一個大大嘅抱抱。',photo:'photo1.jpg'},
   {day:1,rarity:'UR',title:'第一日 · 抱抱補給 B',message:'今日第一組卡已經送到，請你記得收好呢份思念，返工加爆油！',photo:'photo2.jpg'},
